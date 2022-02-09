@@ -95,7 +95,7 @@ func (c *Clock) SetTime(t time.Time) {
 }
 
 func main() {
-	app := tview.NewApplication()
+	app := tview.NewApplication().EnableMouse(true)
 
 	c := NewClock()
 
